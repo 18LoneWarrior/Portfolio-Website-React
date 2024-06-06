@@ -1,5 +1,7 @@
 import {CONTACT} from "../constants/index.jsx";
 import {motion} from "framer-motion";
+import { FaLinkedin } from "react-icons/fa"
+import { SiGmail } from "react-icons/si"
 
 const Contact = () => {
     return (
@@ -21,10 +23,10 @@ const Contact = () => {
                                     </g>
                                 </svg>
                             </motion.div>
-                            <motion.div whileInView={{opacity: 1, x: 0}} initial={{opacity: 0, x: 100}} transition={{duration: 1}} className="w-full max-w-xl lg:w-3/4 text-neutral-400 font-medium text-lg my-4">
+                            <motion.div whileInView={{opacity: 1, x: 0}} initial={{opacity: 0, x: 100}} transition={{duration: 1}} className="w-full max-w-xl lg:w-3/4 text-neutral-400 font-medium text-lg my-4 gap-4">
                                 <p className="text-neutral-400">{CONTACT.address}</p>
-                                <p><a href={import.meta.env.VITE_REACT_APP_LINKEDIN} className="border-b">Linkedin :  {CONTACT.linkedIn}</a></p>
-                                <p><a href={import.meta.env.VITE_REACT_APP_EMAIL} className="border-b">Email :{CONTACT.email}</a></p>
+                                <p>Linkedin :<a href={import.meta.env.VITE_REACT_APP_LINKEDIN} className="border-b">{CONTACT.linkedIn}</a></p>
+                                <p>Email :<a href={import.meta.env.VITE_REACT_APP_EMAIL} className="border-b">{CONTACT.email}</a></p>  
                             </motion.div>
                         </div>
                     </div>

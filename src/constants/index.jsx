@@ -1,6 +1,6 @@
 import Project1 from "/src/assets/Project-1.jpg";
 import Project2 from "/src/assets/Project-2.jpg";
-import Project3 from "/src/assets/Project-3.jpg";
+import Project3 from "/src/assets/Project-3.webp";
 import Project4 from "/src/assets/Project-4.jpg";
 import Project5 from "/src/assets/Project-5.jpg";
 
@@ -24,35 +24,40 @@ export const PROJECTS = [
         image: Project1,
         description: "The CRM includes secure login, logout, and registration functionalities to manage user access and render user specific data. Custom import-export functionality facilitates the easy management of data, which allow users to import and export CRM data in various formats, enhancing data accessibility and flexibility.",
         technologies: ["Python", "Django", "Mysql", "HTML5", "CSS3"],
+        source : [import.meta.env.VITE_REACT_APP_PROJECT1],
     },
     {
         title: "Django REST Api",
         image: Project2,
         description:" Developed a scalable Django-based API to retrieve cryptocurrency data and deliver it in JSON format. Integrated MySQL database to store and manage cryptocurrency data efficiently.",
         technologies: ["Python", "Django", "HTML", "SQLite3"],
+        source : [import.meta.env.VITE_REACT_APP_PROJECT2],
     },
     {
-        title: "Portfolio Website",
+        title: "QR-code generator",
         image: Project3,
-        description: "A personal portfolio website showcasing projects, skills, and contact information. The whole UI and all components are responsive for mobile and small screen size.",
-        technologies: ["React", "Tailwind CSS", "Framer motion"],
+        description: "A python based project which generate qr codes and can be saved in png format. The app interface is made by Tkinter library.",
+        technologies: ["Python"],
+        source : [import.meta.env.VITE_REACT_APP_PROJECT3],
     },
     {
         title: "Cryptocurrency App",
         image: Project4,
         description: "By fetching data from multiple Api, an application is made which keeps track of all cryptocurrencies and related news form the market.",
         technologies: ["React", "Redux-toolkit"],
+        source : [import.meta.env.VITE_REACT_APP_PROJECT4],
     },
     {
-        title: "RESTFul Api",
+        title: "Authentication Api",
         image: Project5,
-        description: "The API supports Create, Read, Update, and Delete operations, allowing users to interact with the database efficiently. MongoDB ensures efficient data storage and retrieval, making it well-suited for handling large volumes of data in a scalable manner.",
-        technologies: ["Node.js", "Express.js", "Javascript", "MongoDB"],
+        description: "The API support the registration, login, logout functionality which allows users to interact to with UI to access their dashboard pages. MongoDB ensures efficient data storage and retrieval, making it well-suited for handling large volumes of data in a scalable manner. This project utilizes JWT to authenticate the user which allows them to use the system.",
+        technologies: ["Node.js", "Express.js", "Javascript", "MongoDB", "React"],
+        source : [import.meta.env.VITE_REACT_APP_PROJECT5],
     },
 ];
 
 export const CONTACT = {
-    address: "India",
-    linkedIn: "linkedin.com/abhilash",
-    email: "abhilashshakya4@gmail.com",
+    address : " India",
+    linkedIn : " linkedin.com/abhilash",
+    email : " abhilashshakya4@gmail.com",
 };
